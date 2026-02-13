@@ -1,4 +1,4 @@
-# LLM Document Question Answering System (RAG)
+# Fully Local RAG System with Ollama + FAISS
 
 A production-ready Retrieval-Augmented Generation (RAG) pipeline built with FastAPI, FAISS, and OpenAI.
 
@@ -10,6 +10,12 @@ A production-ready Retrieval-Augmented Generation (RAG) pipeline built with Fast
 - Vector similarity search
 - LLM-powered contextual answering
 - REST API endpoints
+
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green)
+![Ollama](https://img.shields.io/badge/Ollama-Local%20LLM-purple)
+![FAISS](https://img.shields.io/badge/FAISS-VectorDB-orange)
+
 
 # STEP 1 — Create Demo Document
 
