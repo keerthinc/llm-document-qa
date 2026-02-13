@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+.env
+
+# Vector store (generated files)
+vector_store/
+
+# Mac
+.DS_Store
+
+# Logs
+*.log
