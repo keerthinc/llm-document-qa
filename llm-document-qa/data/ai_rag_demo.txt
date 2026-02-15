@@ -1,0 +1,23 @@
+Retrieval-Augmented Generation (RAG) is a technique that improves the accuracy of large language models by combining information retrieval with text generation.
+
+Traditional large language models rely only on their internal training data. This can lead to hallucinations or outdated answers.
+
+A RAG system works by first converting documents into vector embeddings using an embedding model. These embeddings are stored in a vector database such as FAISS.
+
+When a user asks a question, the system retrieves the most relevant document chunks using vector similarity search and optionally BM25 keyword search.
+
+The retrieved context is then passed to a language model, such as a locally hosted model via Ollama, to generate a grounded answer.
+
+Key components of a RAG system include:
+1. Document ingestion
+2. Text chunking
+3. Embedding generation
+4. Vector similarity search
+5. Re-ranking
+6. Context-aware generation
+
+Benefits of RAG:
+- Reduces hallucination
+- Improves factual accuracy
+- Enables domain-specific knowledge
+- Keeps responses grounded in data

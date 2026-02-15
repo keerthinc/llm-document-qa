@@ -1,19 +1,10 @@
 from fastapi import FastAPI
-from pydantic import BaseModel
-from app.rag import generate_answer
-from app.ingest import ingest_documents
+from app.api.routes_query import router as query_router
+from app.api.routes_upload import router as upload_router
+from app.api.routes_auth import router as auth_router
 
-app = FastAPI(title="LLM Document QA System")
+app = FastAPI(title="Enterprise RAG System")
 
-class QueryRequest(BaseModel):
-    question: str
-
-@app.post("/ingest")
-def ingest():
-    ingest_documents()
-    return {"status": "Documents ingested successfully"}
-
-@app.post("/query")
-def query(request: QueryRequest):
-    answer = generate_answer(request.question)
-    return {"answer": answer}
+app.include_router(query_router)
+app.include_router(upload_router)
+app.include_router(auth_router)

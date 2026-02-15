@@ -3,6 +3,14 @@ uvicorn
 python-dotenv
 faiss-cpu
 sentence-transformers
+rank-bm25
+transformers
+torch
 requests
-pydantic
-tqdm
+redis
+python-jose
+passlib[bcrypt]
+ragas
+datasets
+python-multipart
+
